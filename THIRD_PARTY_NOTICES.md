@@ -24,8 +24,8 @@ Ikonvert uses Qt and PySide6 under the GNU Lesser General Public License v3.
 - You may replace these libraries with your own compatible (modified) builds.
 - The source code for Qt and PySide6 is available at
   https://code.qt.io/ and https://download.qt.io/.
-- The complete source code of Ikonvert is published in the source code zip,
-  so the whole app can be rebuilt with `build.bat`.
+- The source code of Ikonvert is available at
+  https://github.com/Siba79/Ikonvert.
 
 ## PyInstaller
 
@@ -35,6 +35,5 @@ bootloader to be distributed with programs under any license.
 
 ## App icon
 
-The app icon artwork (`assets/app_icon.png`) is supplied by the author,
-Stefan Karlsson. `assets/app.ico` is generated from it with
-`tools/update_icon.py`.
+The app icon artwork (`assets/app.ico`) is supplied by the author,
+Stefan Karlsson.

@@ -20,10 +20,14 @@ Ikonvert is a free, open-source and portable Windows tool for working with icons
 
 ## Download
 
-Get the latest release from the `releases` folder or the release page:
+Get the latest version from the
+[Releases page](https://github.com/Siba79/Ikonvert/releases):
 
 - `Ikonvert_v<version>_portable_win64.zip`: unzip and run `Ikonvert.exe`
-- `Ikonvert_v<version>_source.zip`: the full source code
+- `Ikonvert_v<version>_source.zip`: the source code
+
+Each release is scanned on VirusTotal, see
+[VirusTotal_Ikonvert.md](VirusTotal_Ikonvert.md).
 
 ## Run from source
 
@@ -32,20 +36,6 @@ pip install -r requirements.txt
 python ikonvert.py
 ```
 
-## Build
-
-Double-click `build.bat`. It:
-
-1. creates a private `.venv` in the project folder, so nothing is installed system-wide
-2. builds the portable app with PyInstaller (onedir, no console window)
-3. adds the license documents
-4. creates both zips in `releases\`
-
-The version number is set in `version.py`.
-
-To change the app icon, replace `assets/app_icon.png` (square, ideally 1024 px) and run
-`python tools/update_icon.py`.
-
 ## Project layout
 
 | Path | What it is |
@@ -53,9 +43,7 @@ To change the app icon, replace `assets/app_icon.png` (square, ideally 1024 px) 
 | `ikonvert.py` | The app (PySide6 GUI) |
 | `ico_core.py` | Conversion logic (no GUI) |
 | `version.py` | App name and version |
-| `assets/` | App icon (`app.ico`, `app_icon.png`) |
-| `tools/update_icon.py` | Rebuilds `app.ico` from `app_icon.png` |
-| `tools/build_helper.py` | Used by `build.bat`: version info, licenses and zips |
+| `assets/app.ico` | App icon |
 
 ## License
 
